@@ -18,7 +18,7 @@ sendBtn.addEventListener('click', (e)=>{
 name = name.value;
 
 
- localStorage.setItem('name', 'peace you are welcome!');
+ localStorage.setItem('name', 'peace, you are welcome.');
   
 
 
@@ -26,13 +26,17 @@ name = name.value;
   localStorage.getItem('name');
 
   });
-if (localStorage.length >0){
-    alert('Hello! you are welcome');
-}else{
-  alert('hey');
 
+
+const welcomeNote = () =>{
+  const Name = localStorage.getItem('name') || false;
+  if(Name){
+    alert(`welcome back ${name}`);
+  }else{
+    alert('you are welcome');
+  }
 }
-
+document.addEventListener("DOMContentLoaded", welcomeNote );
 
  
 

@@ -9,6 +9,7 @@ body {
   background-color: black;
   font-family: "Asap", sans-serif;
   display: grid;
+  overflow: hidden;
  
 }
 form{
@@ -72,9 +73,8 @@ label{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: bold;
-  letter-spacing: 1px;
   color: black;
   padding: 4px;
-  margin:5px;
-  float: right;
+  margin:2px;
+ 
 }

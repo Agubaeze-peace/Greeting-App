@@ -30,7 +30,7 @@ name = name.value;
 
 const welcomeNote = () =>{
   const Name = localStorage.getItem('name') || false;
-  if(Name){
+  if(name){
     alert(`welcome back ${name}`);
   }else{
     alert('you are welcome');
